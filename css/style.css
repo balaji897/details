@@ -1587,8 +1587,10 @@ h1, h2, h3, h4, h5, h6 {
    -------------------------------------------------- */
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contact-info-column {
