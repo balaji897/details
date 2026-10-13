@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addanki Balaji | Software Developer & AI/IoT Enthusiast</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Personal portfolio of Addanki Balaji - B.Tech CSBS student at QIS College of Engineering and Technology, software developer interested in Python, Java, AI, and IoT.">
+  <meta name="keywords"
+    content="Addanki Balaji, Portfolio, Software Developer, B.Tech CSBS, QIS College, Python, Java, AI, IoT, Arduino">
+  <meta name="author" content="Addanki Balaji">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Addanki Balaji | Portfolio">
+  <meta property="og:description"
+    content="Beginner Software Developer passionate about Python, Java, AI, and IoT solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Balaji</span>
+        <span class="logo-cyan">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-outline-cyan header-cta">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+        <li><a href="#resume" class="mobile-link">Resume</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-socials">
+        <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/addanki-balaji-a219062a4/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:addankibalaji897@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+
+        <div class="hero-content" data-reveal="fade-right">
+          <!-- Status Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-cyan glow-text">Addanki Balaji</span>
+          </h1>
+
+          <div class="hero-typewriter-wrapper">
+            <span class="typewriter-prefix">I am an aspiring </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Undergrad in <strong>Computer Science & Business Systems</strong> at <strong>QIS College of Engineering &
+              Technology</strong>.
+            Passionate about coding in <strong>Python & Java</strong>, exploring <strong>Artificial
+              Intelligence</strong>, and building smart automated solutions with <strong>IoT & Arduino</strong>.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary-cyan">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#resume" class="btn btn-glass">
+              <span>Check Resume</span>
+              <i class="fa-solid fa-file-invoice"></i>
+            </a>
+          </div>
+
+          <div class="hero-social-strip">
+            <span class="social-label">Connect:</span>
+            <div class="social-icons">
+              <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer" class="social-btn"
+                title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/addanki-balaji-a219062a4/" target="_blank" rel="noopener noreferrer"
+                class="social-btn" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:addankibalaji897@gmail.com" class="social-btn" title="Direct Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal="fade-left">
+          <div class="profile-card-wrapper">
+            <!-- Glow background rings -->
+            <div class="glow-sphere sphere-1"></div>
+            <div class="glow-sphere sphere-2"></div>
+
+            <div class="profile-card glass-panel">
+              <div class="profile-image-container">
+                <img src="assets/images/profile.jpg" alt="Addanki Balaji" class="profile-img"
+                  id="hero-profile-img">
+                <div class="profile-overlay-gradient"></div>
+              </div>
+
+              <div class="profile-info-footer">
+                <div class="profile-name-tag">
+                  <h3>Addanki Balaji</h3>
+                  <p><i class="fa-solid fa-location-dot"></i> Ongole, Andhra Pradesh</p>
+                </div>
+                <div class="profile-badge-tech">
+                  <span>CSBS</span>
+                </div>
+              </div>
+
+              <!-- Floating Micro Badges -->
+              <div class="floating-badge badge-python animate-float-1">
+                <i class="fa-brands fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="floating-badge badge-iot animate-float-2">
+                <i class="fa-solid fa-microchip"></i>
+                <span>IoT & Arduino</span>
+              </div>
+              <div class="floating-badge badge-java animate-float-3">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Discover</span>
+          <h2 class="section-title">About <span class="highlight-cyan">Me</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-card-narrative glass-panel" data-reveal="fade-right">
+            <div class="card-icon-header">
+              <div class="badge-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Aspiring Software Developer</h3>
+            </div>
+
+            <p>
+              Hello! I am <strong>Addanki Balaji</strong>, an engineering undergraduate currently pursuing my
+              <strong>B.Tech in Computer Science and Business Systems</strong> at <strong>QIS College of Engineering and
+                Technology, Ongole</strong> (2023 - 2027).
+            </p>
+            <p>
+              I am a beginner software developer deeply enthusiastic about creating software and hardware solutions that
+              make an impact. My primary technical interests revolve around <strong>Python</strong>,
+              <strong>Java</strong>, <strong>Artificial Intelligence</strong>, and <strong>Internet of Things
+                (IoT)</strong>.
+            </p>
+            <p>
+              I take pride in being a proactive, quick learner with strong problem-solving inclinations. Whether it is
+              writing clean object-oriented code, programming sensors on Arduino microcontrollers, or designing
+              student-centric AI applications, I love transforming technical curiosity into working prototypes.
+            </p>
+
+            <div class="about-interests">
+              <h4>Primary Focus Areas:</h4>
+              <div class="interest-tags">
+                <span class="interest-tag"><i class="fa-brands fa-python"></i> Python Programming</span>
+                <span class="interest-tag"><i class="fa-brands fa-java"></i> Java Development</span>
+                <span class="interest-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+                <span class="interest-tag"><i class="fa-solid fa-wifi"></i> IoT & Automation</span>
+                <span class="interest-tag"><i class="fa-solid fa-robot"></i> Arduino & Robotics</span>
+                <span class="interest-tag"><i class="fa-solid fa-gears"></i> Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-metrics" data-reveal="fade-left">
+
+            <div class="metric-box glass-panel">
+              <div class="metric-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="metric-details">
+                <span class="metric-label">Degree & Branch</span>
+                <h4>B.Tech in CSBS</h4>
+                <p>QIS College of Engg. & Tech</p>
+              </div>
+            </div>
+
+            <div class="metric-box glass-panel">
+              <div class="metric-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="metric-details">
+                <span class="metric-label">Academic Merit</span>
+                <h4>7.5 CGPA</h4>
+                <p>Consistent B.Tech Performance</p>
+              </div>
+            </div>
+
+            <div class="metric-box glass-panel">
+              <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="metric-details">
+                <span class="metric-label">Certified in</span>
+                <h4>Advanced Robotics</h4>
+                <p>EduSkills Foundation (AI & IoT)</p>
+              </div>
+            </div>
+
+            <div class="metric-box glass-panel">
+              <div class="metric-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+              <div class="metric-details">
+                <span class="metric-label">Location & Status</span>
+                <h4>Ongole, AP, India</h4>
+                <p>Open for Internships</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Milestones</span>
+          <h2 class="section-title">My <span class="highlight-cyan">Education</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Academic journey shaping my analytical mindset and technical foundation</p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Timeline Item 1: B.Tech -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-year"><i class="fa-regular fa-calendar"></i> 2023 - 2027</span>
+                <span class="grade-pill grade-highlight">CGPA: 7.5</span>
+              </div>
+              <h3 class="timeline-title">B.Tech - Computer Science & Business Systems (CSBS)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> QIS College of Engineering and Technology, Ongole
+              </h4>
+              <p class="timeline-desc">
+                Currently pursuing an interdisciplinary degree that blends foundational Computer Science (Data
+                Structures, Object-Oriented Programming, AI, IoT) with contemporary Business Strategy and Systems
+                Engineering.
+              </p>
+              <div class="timeline-tags">
+                <span>Computer Science</span>
+                <span>Business Systems</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>IoT & Embedded</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Intermediate -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-year"><i class="fa-regular fa-calendar"></i> 2021 - 2023</span>
+                <span class="grade-pill">Score: 77%</span>
+              </div>
+              <h3 class="timeline-title">Intermediate Education (Class XII)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> Royal Junior College
+              </h4>
+              <p class="timeline-desc">
+                Completed higher secondary education with a rigorous focus on Mathematics, Physics, and Chemistry (MPC),
+                building analytical problem-solving and numerical aptitude.
+              </p>
+              <div class="timeline-tags">
+                <span>Mathematics</span>
+                <span>Physics</span>
+                <span>Analytical Aptitude</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: School -->
+          <div class="timeline-item" data-reveal="fade-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-year"><i class="fa-regular fa-calendar"></i> Secondary Schooling</span>
+                <span class="grade-pill grade-highlight">GPA: 9.0 Points</span>
+              </div>
+              <h3 class="timeline-title">Secondary School Certificate (SSC / Class X)</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> PSNCC High School
+              </h4>
+              <p class="timeline-desc">
+                Graduated with exceptional academic distinction scoring 9.0 points, demonstrating consistency in
+                science, mathematics, and communicative skills.
+              </p>
+              <div class="timeline-tags">
+                <span>Academic Distinction</span>
+                <span>Science & Logic</span>
+                <span>High Merit</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Capabilities</span>
+          <h2 class="section-title">Technical <span class="highlight-cyan">Skills</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Programming languages, hardware tools, and developer proficiencies</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card glass-panel" data-reveal="fade-up">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python skill-icon-color"></i> Python</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 80%;"></div>
+                </div>
+                <p class="skill-subtext">Data handling, OOP, automation scripts & basic ML workflows</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-java skill-icon-color"></i> Java</span>
+                  <span class="skill-percent">72%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 72%;"></div>
+                </div>
+                <p class="skill-subtext">Core Java, Object-Oriented principles, collections & classes</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Hardware, IoT & Robotics -->
+          <div class="skill-category-card glass-panel" data-reveal="fade-up" data-delay="100">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3>IoT & Robotics</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-wifi skill-icon-color"></i> Internet of Things
+                    (IoT)</span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 78%;"></div>
+                </div>
+                <p class="skill-subtext">Sensors integration (DHT, Ultrasonic), relays, data telemetry</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-robot skill-icon-color"></i> Arduino Prototyping</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 82%;"></div>
+                </div>
+                <p class="skill-subtext">Microcontroller C/C++ programming, motor drivers, circuit wiring</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web & Frontend -->
+          <div class="skill-category-card glass-panel" data-reveal="fade-up" data-delay="200">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Web Fundamentals</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5 skill-icon-color"></i> HTML5</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 85%;"></div>
+                </div>
+                <p class="skill-subtext">Semantic document structure, forms, SEO-friendly layout</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-css3-alt skill-icon-color"></i> CSS3</span>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 78%;"></div>
+                </div>
+                <p class="skill-subtext">Flexbox, CSS Grid, responsive design, animations & modern themes</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Core Competencies -->
+          <div class="skill-category-card glass-panel" data-reveal="fade-up" data-delay="300">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Core Strengths</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-puzzle-piece skill-icon-color"></i> Problem
+                    Solving</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 80%;"></div>
+                </div>
+                <p class="skill-subtext">Breaking complex challenges into structured, testable algorithmic steps</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-bolt skill-icon-color"></i> Quick Learning &
+                    Teamwork</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-bar" style="--target-width: 88%;"></div>
+                </div>
+                <p class="skill-subtext">Adaptable to emerging frameworks, dedicated team player & communicator</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-rocket"></i> Portfolio</span>
+          <h2 class="section-title">Featured <span class="highlight-cyan">Projects</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Real-world projects applying software engineering, IoT automation, and robotics
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filter-row" data-reveal="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI & Software</button>
+          <button class="filter-btn" data-filter="iot">IoT & Robotics</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: AI Planner -->
+          <article class="project-card glass-panel" data-category="ai" data-reveal="fade-up">
+            <div class="project-image-box">
+              <img src="assets/images/project-ai-planner.jpg" alt="AI Personalized Learning Planner"
+                class="project-thumb">
+              <div class="project-overlay">
+                <button class="btn-quick-view open-modal-btn" data-project="ai-planner">
+                  <i class="fa-solid fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="project-badge-cat"><i class="fa-solid fa-brain"></i> AI & Software</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">AI Personalized Learning Planner</h3>
+              <p class="project-description">
+                An intelligent study assistant that creates customized learning schedules based on individual pace,
+                topic mastery, and student deadlines, optimizing revision routines with adaptive recommendations.
+              </p>
+
+              <div class="tech-stack-pills">
+                <span>Python</span>
+                <span>AI Concepts</span>
+                <span>Adaptive Logic</span>
+                <span>Web UI</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-project="ai-planner">
+                  <span>Details</span>
+                  <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Smart Dairy Shed -->
+          <article class="project-card glass-panel" data-category="iot" data-reveal="fade-up" data-delay="100">
+            <div class="project-image-box">
+              <img src="assets/images/project-dairy-iot.jpg" alt="Smart Dairy Shed Heat and Stress Control"
+                class="project-thumb">
+              <div class="project-overlay">
+                <button class="btn-quick-view open-modal-btn" data-project="dairy-iot">
+                  <i class="fa-solid fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="project-badge-cat"><i class="fa-solid fa-microchip"></i> IoT & Automation</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Smart Dairy Shed Heat & Stress Control</h3>
+              <p class="project-description">
+                An automated IoT microclimate system engineered to prevent heat stress in livestock. Automatically
+                triggers misting fans and cooling vents based on live ambient temperature and humidity readings.
+              </p>
+
+              <div class="tech-stack-pills">
+                <span>IoT</span>
+                <span>Arduino</span>
+                <span>DHT Sensors</span>
+                <span>Relay Modules</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-project="dairy-iot">
+                  <span>Details</span>
+                  <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Robotic Rover -->
+          <article class="project-card glass-panel" data-category="iot" data-reveal="fade-up" data-delay="200">
+            <div class="project-image-box">
+              <img src="assets/images/project-robotic-rover.jpg" alt="Low-Cost Robotic Rover for College Canteens"
+                class="project-thumb">
+              <div class="project-overlay">
+                <button class="btn-quick-view open-modal-btn" data-project="robotic-rover">
+                  <i class="fa-solid fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="project-badge-cat"><i class="fa-solid fa-robot"></i> Robotics & Hardware</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Low-Cost Robotic Rover for College Canteens</h3>
+              <p class="project-description">
+                A cost-efficient autonomous/teleoperated mobile robotic rover designed for food and snack delivery
+                across campus corridors, featuring real-time ultrasonic obstacle avoidance and payload stabilization.
+              </p>
+
+              <div class="tech-stack-pills">
+                <span>Arduino</span>
+                <span>Robotics</span>
+                <span>Ultrasonic Sensors</span>
+                <span>Motor Drivers</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-outline-cyan open-modal-btn" data-project="robotic-rover">
+                  <span>Details</span>
+                  <i class="fa-solid fa-circle-info"></i>
+                </button>
+                <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Knowledge</span>
+          <h2 class="section-title">Certifications & <span class="highlight-cyan">Training</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="cert-featured-container" data-reveal="fade-up">
+
+          <div class="cert-card glass-panel">
+            <div class="cert-image-side">
+              <img src="assets/images/cert-robotics.jpg" alt="EduSkills Advanced Robotics Certificate"
+                class="cert-preview-img" id="cert-clickable-img">
+              <div class="cert-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</div>
+            </div>
+
+            <div class="cert-details-side">
+              <div class="cert-status-tag">
+                <i class="fa-solid fa-shield-halved"></i> Industry Verified Credential
+              </div>
+
+              <h3 class="cert-title">Advanced Robotics using AI and IoT</h3>
+
+              <div class="cert-issuer-meta">
+                <span><i class="fa-solid fa-building"></i> Issuing Body: <strong>EduSkills Foundation</strong></span>
+                <span><i class="fa-solid fa-id-badge"></i> Credential ID: <strong>ESF/ARAI/2023/AB1048</strong></span>
+              </div>
+
+              <p class="cert-summary">
+                Comprehensive practical training program focused on autonomous robotic systems, microcontroller
+                interfacing, integration of AI decision-making algorithms with IoT sensor streams, and motor control
+                kinematics.
+              </p>
+
+              <div class="cert-skills-acquired">
+                <h4>Skills & Competencies Gained:</h4>
+                <div class="cert-pills">
+                  <span>Autonomous Robotics</span>
+                  <span>AI Algorithm Integration</span>
+                  <span>Sensor Interfacing</span>
+                  <span>IoT Telemetry</span>
+                  <span>Hardware Automation</span>
+                </div>
+              </div>
+
+              <div class="cert-actions-row">
+                <button class="btn btn-primary-cyan btn-sm" id="view-cert-modal-btn">
+                  <i class="fa-solid fa-expand"></i> View Credential
+                </button>
+                <a href="https://eduskillsfoundation.org/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-glass btn-sm">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> EduSkills Foundation
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-file-lines"></i> Curriculum Vitae</span>
+          <h2 class="section-title">My <span class="highlight-cyan">Resume</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">A concise summary of my qualifications, technical skills, and project experience
+          </p>
+        </div>
+
+        <div class="resume-wrapper glass-panel" data-reveal="fade-up">
+
+          <div class="resume-header-preview">
+            <div class="resume-user-brief">
+              <h3>Addanki Balaji</h3>
+              <p>B.Tech CSBS Undergrad & Aspiring Software Developer</p>
+              <div class="resume-quick-contacts">
+                <span><i class="fa-solid fa-envelope"></i> addankibalaji897@gmail.com</span>
+                <span><i class="fa-solid fa-location-dot"></i> Ongole, AP, India</span>
+                <span><i class="fa-brands fa-github"></i> github.com/balaji897</span>
+              </div>
+            </div>
+
+            <div class="resume-actions-group">
+              <button class="btn btn-primary-cyan" id="open-resume-modal-btn">
+                <i class="fa-solid fa-eye"></i>
+                <span>Preview Resume</span>
+              </button>
+              <a href="assets/docs/resume.html" target="_blank" class="btn btn-outline-cyan">
+                <i class="fa-solid fa-print"></i>
+                <span>Print / Save PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="resume-quick-overview-grid">
+            <div class="resume-stat-col">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <ul>
+                <li><strong>B.Tech CSBS:</strong> QIS College (7.5 CGPA)</li>
+                <li><strong>Intermediate:</strong> Royal Junior College (77%)</li>
+                <li><strong>School:</strong> PSNCC High School (9.0 GPA)</li>
+              </ul>
+            </div>
+
+            <div class="resume-stat-col">
+              <h4><i class="fa-solid fa-code"></i> Key Technical Skills</h4>
+              <ul>
+                <li><strong>Languages:</strong> Python, Java</li>
+                <li><strong>Web:</strong> HTML5, CSS3, JavaScript</li>
+                <li><strong>IoT & Systems:</strong> Arduino, Sensors, Relays</li>
+              </ul>
+            </div>
+
+            <div class="resume-stat-col">
+              <h4><i class="fa-solid fa-folder-open"></i> Portfolio Highlights</h4>
+              <ul>
+                <li>AI Personalized Learning Planner</li>
+                <li>Smart Dairy Shed Heat & Stress Control</li>
+                <li>Low-Cost Robotic Rover for Canteens</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Contact <span class="highlight-cyan">Me</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">Interested in collaborating or discussing an opportunity? Drop a message!</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column" data-reveal="fade-right">
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:addankibalaji897@gmail.com" class="contact-value"
+                  id="email-text">addankibalaji897@gmail.com</a>
+              </div>
+              <button class="btn-copy" id="copy-email-btn" title="Copy Email to Clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-text">
+                <span class="contact-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/addanki-balaji-a219062a4/" target="_blank"
+                  rel="noopener noreferrer" class="contact-value">
+                  linkedin.com/in/addanki-balaji
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/in/addanki-balaji-a219062a4/" target="_blank" rel="noopener noreferrer"
+                class="btn-copy" title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <span class="contact-label">GitHub Repository</span>
+                <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer" class="contact-value">
+                  github.com/balaji897
+                </a>
+              </div>
+              <a href="https://github.com/balaji897" target="_blank" rel="noopener noreferrer" class="btn-copy"
+                title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text">
+                <span class="contact-label">College & City</span>
+                <span class="contact-value">QIS College of Engg., Ongole, AP, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-column" data-reveal="fade-left">
+            <form class="contact-form glass-panel" id="contact-form">
+              <h3 class="form-title">Send Me a Direct Message</h3>
+
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user form-icon"></i>
+                  <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope form-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-bookmark form-icon"></i>
+                  <input type="text" id="subject" name="subject" placeholder="Project Opportunity / Internship / Hello"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <textarea id="message" name="message" rows="4"
+                    placeholder="Hello Balaji, I would like to talk about..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary-cyan submit-btn" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Balaji</span>
+          <span class="logo-cyan">.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting software solutions & smart hardware systems.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">&copy; <span id="current-year">2026</span> Addanki Balaji. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- MODALS -->
+
+  <!-- 1. Project Detail Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content glass-panel">
+      <button class="modal-close-btn" id="close-project-modal" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="project-modal-body">
+        <!-- Dynamically injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Certificate Lightbox Modal -->
+  <div class="modal-backdrop" id="cert-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content glass-panel cert-modal-dialog">
+      <button class="modal-close-btn" id="close-cert-modal" aria-label="Close modal">&times;</button>
+      <div class="cert-modal-body">
+        <img src="assets/images/cert-robotics.jpg" alt="Advanced Robotics using AI and IoT - EduSkills"
+          class="cert-modal-img">
+        <div class="cert-modal-caption">
+          <h3>Advanced Robotics using AI and IoT</h3>
+          <p>Issued by EduSkills Foundation to Addanki Balaji</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Resume Preview Modal -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content glass-panel resume-modal-dialog">
+      <button class="modal-close-btn" id="close-resume-modal" aria-label="Close modal">&times;</button>
+      <div class="resume-modal-header">
+        <h3><i class="fa-solid fa-file-lines highlight-cyan"></i> Curriculum Vitae - Addanki Balaji</h3>
+        <div class="modal-actions-inline">
+          <a href="assets/docs/resume.html" target="_blank" class="btn btn-sm btn-primary-cyan">
+            <i class="fa-solid fa-print"></i> Open Full View
+          </a>
+        </div>
+      </div>
+      <div class="resume-iframe-wrapper">
+        <iframe src="assets/docs/resume.html" title="Addanki Balaji Resume"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

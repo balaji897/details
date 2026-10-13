@@ -1,0 +1,151 @@
+/* ===================================================================
+   ADDANKI BALAJI - PORTFOLIO ANIMATIONS & KEYFRAMES
+   =================================================================== */
+
+/* Typewriter Cursor Blink */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Status Dot Pulse */
+@keyframes pulse-dot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Mouse Scroll Wheel Motion */
+@keyframes scroll-wheel {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  60% {
+    opacity: 0.8;
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 14px);
+  }
+}
+
+/* Floating Micro Badges */
+@keyframes float-badge-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes float-badge-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-2deg);
+  }
+}
+
+@keyframes float-badge-3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+.animate-float-1 {
+  animation: float-badge-1 4.5s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-badge-2 5.2s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-badge-3 4.8s ease-in-out infinite;
+}
+
+/* Toast Slide-In */
+@keyframes slide-toast {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Scroll Reveal States */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(35px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(-40px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(40px);
+}
+
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Delay modifiers */
+[data-delay="100"] {
+  transition-delay: 0.1s;
+}
+[data-delay="200"] {
+  transition-delay: 0.2s;
+}
+[data-delay="300"] {
+  transition-delay: 0.3s;
+}
+
+/* Shimmer Highlight Effect on Cards */
+@keyframes glow-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Glowing Border Pulse for Featured Elements */
+@keyframes pulse-cyan-border {
+  0%, 100% {
+    border-color: rgba(0, 242, 254, 0.3);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+  }
+  50% {
+    border-color: rgba(0, 242, 254, 0.7);
+    box-shadow: 0 0 30px rgba(0, 242, 254, 0.4);
+  }
+}

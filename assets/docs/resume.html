@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Addanki Balaji | Software Developer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --accent: #0077b6;
+      --text: #2d3748;
+      --text-light: #4a5568;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.5;
+      padding: 30px 20px;
+    }
+
+    .resume-sheet {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px 45px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    .toolbar {
+      max-width: 820px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-print {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-print:hover {
+      background: #023e8a;
+    }
+
+    .btn-back {
+      color: #4a5568;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-back:hover {
+      color: #0077b6;
+    }
+
+    /* Resume Header */
+    .header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.1rem;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .header .subtitle {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    .contact-row a {
+      color: var(--text-light);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-row a:hover {
+      color: var(--accent);
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title i {
+      color: var(--accent);
+      font-size: 1rem;
+    }
+
+    /* Content Items */
+    .entry {
+      margin-bottom: 14px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .entry-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .entry-date {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-light);
+      white-space: nowrap;
+    }
+
+    .entry-sub {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .entry-sub .grade {
+      color: #2b6cb0;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+
+    .entry-desc {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    ul.bullet-list {
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    ul.bullet-list li {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 3px;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+
+    .skills-table td {
+      padding: 5px 0;
+      vertical-align: top;
+    }
+
+    .skills-label {
+      width: 28%;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .skills-val {
+      color: var(--text-light);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        box-shadow: none;
+        padding: 15mm 15mm;
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      @page {
+        margin: 10mm;
+        size: A4;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="../../index.html" class="btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button class="btn-print" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <div class="resume-sheet">
+    <!-- Header -->
+    <header class="header">
+      <h1>Addanki Balaji</h1>
+      <div class="subtitle">B.Tech Computer Science & Business Systems Undergraduate | Aspiring Software Developer</div>
+      <div class="contact-row">
+        <span><i class="fa-solid fa-location-dot"></i> Ongole, Andhra Pradesh, India</span>
+        <a href="mailto:addankibalaji897@gmail.com"><i class="fa-solid fa-envelope"></i> addankibalaji897@gmail.com</a>
+        <a href="https://www.linkedin.com/in/addanki-balaji-a219062a4/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/addanki-balaji</a>
+        <a href="https://github.com/balaji897" target="_blank"><i class="fa-brands fa-github"></i> github.com/balaji897</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title"><i class="fa-solid fa-user"></i> Professional Summary</h2>
+      <p class="entry-desc">
+        Undergraduate student pursuing B.Tech in Computer Science and Business Systems (2023 - 2027) with a CGPA of 7.5 at QIS College of Engineering and Technology. Enthusiastic beginner software developer with strong foundational skills in Python, Java, AI, and IoT hardware prototyping. Proactive and quick learner, certified in Advanced Robotics using AI and IoT by EduSkills. Seeking internship and collaborative opportunities to build impactful, scalable solutions.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">B.Tech in Computer Science and Business Systems (CSBS)</span>
+          <span class="entry-date">2023 – 2027</span>
+        </div>
+        <div class="entry-sub">QIS College of Engineering and Technology, Ongole <span class="grade">| CGPA: 7.5 / 10</span></div>
+        <p class="entry-desc">Key Coursework: Object-Oriented Programming, Data Structures, AI Fundamentals, IoT & Embedded Systems, Business Information Systems.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Intermediate Education (Class XII - MPC)</span>
+          <span class="entry-date">2021 – 2023</span>
+        </div>
+        <div class="entry-sub">Royal Junior College <span class="grade">| Percentage: 77%</span></div>
+        <p class="entry-desc">Focus: Mathematics, Physics, and Chemistry with rigorous analytical problem-solving foundation.</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Secondary School Certificate (SSC - Class X)</span>
+          <span class="entry-date">Completed</span>
+        </div>
+        <div class="entry-sub">PSNCC High School <span class="grade">| Grade: 9.0 Points / 10</span></div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <h2 class="section-title"><i class="fa-solid fa-wrench"></i> Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-label">Programming:</td>
+          <td class="skills-val">Python, Java, C Basics</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Web Technologies:</td>
+          <td class="skills-val">HTML5, CSS3, JavaScript Basics, Responsive Web Design</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Hardware & IoT:</td>
+          <td class="skills-val">Arduino, IoT Sensor Interfacing (DHT11/22, Ultrasonic, Relays, DC Motors), Circuit Prototyping</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Core Competencies:</td>
+          <td class="skills-val">Problem Solving, Object-Oriented Design (OOP), Algorithm Foundations, Fast Adaptability, Team Collaboration</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+      <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Key Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">AI Personalized Learning Planner</span>
+          <span class="entry-date">Python, AI Logic, Web UI</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Architected an intelligent study assistant that tailors adaptive revision schedules according to individual topic comprehension and exam deadlines.</li>
+          <li>Engineered dynamic pacing algorithms that reduce study fatigue and prioritize weaker topics.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Smart Dairy Shed Heat and Stress Control</span>
+          <span class="entry-date">IoT, Arduino, DHT Sensors, Relays</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed an automated microclimate regulation IoT system to protect livestock from heat-stress by continuously monitoring temperature and humidity (THI index).</li>
+          <li>Configured automated relays to actuate misting fans and cooling exhaust blowers automatically.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Low-Cost Robotic Rover for College Canteens</span>
+          <span class="entry-date">Arduino, Ultrasonic Sensors, L298N Motor Driver</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Built a four-wheel autonomous/teleoperated delivery mobile robot designed for campus cafeteria deliveries.</li>
+          <li>Integrated ultrasonic collision-avoidance logic to safely navigate crowded hallways and corridors.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-title"><i class="fa-solid fa-certificate"></i> Certifications & Credentials</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Advanced Robotics using AI and IoT</span>
+          <span class="entry-date">EduSkills Foundation</span>
+        </div>
+        <p class="entry-desc">
+          Credential ID: ESF/ARAI/2023/AB1048 &bull; Comprehensive training on robotics kinematics, sensor fusion, microcontroller programming, and AI-enabled decision logic.
+        </p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
